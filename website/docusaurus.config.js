@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: 'Vector',
   tagline: 'A High-Performance, Logs, Metrics, & Events Router',
@@ -150,6 +152,9 @@ module.exports = {
         },
       },
     ],
+  ],
+  plugins: [
+    path.resolve(__dirname, './plugins/components'),
   ],
   scripts: [],
   stylesheets: [
