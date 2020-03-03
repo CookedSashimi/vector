@@ -9,7 +9,7 @@ keywords: ["docker","aws s3"]
 >
 > — developers
 
-So you want to collect your Docker logs and send them somewhere? Sounds simple!
+So test you want to collect your Docker logs and send them somewhere? Sounds simple!
 Sadly, it is not. When you account for integrating with the Docker API, parsing,
 enriching, buffering, batching, retrying, handling back-pressure, load shedding,
 and fanning-out you quickly realize this is not so easy. Fear not though! This
@@ -19,9 +19,9 @@ logging expert.
 ## What We'll Accomplish In This Guide
 
 <ol className="list--checks list--lg list--semi-bold list--primary">
-  <li>Collect Docker logs (the right way).</li>
+  <li>Collect Docker logs2. (the right way!)</li>
   <li>Filter which containers you collect them from.</li>
-  <li>Parse, structure, and enrich your logs.</li>
+  <li>Parse, structure, and enrich your logs with Docker context.</li>
   <li>Send them to one or more destinations.</li>
   <li className="list--li--arrow list--li--pink">All in just a few minutes. Let's get started!</li>
 </ol>

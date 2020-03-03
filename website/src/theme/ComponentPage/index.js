@@ -73,7 +73,7 @@ function ComponentPage(props) {
             </a>
           </div>
           <h1>{title}</h1>
-          <p>Written and maintained, with love, by the <Link to="/community/#team">Vector team</Link></p>
+          <p>Written, with <i className="feather icon-heart"></i>, by the <Link to="/community/#team">Vector team</Link></p>
         </div>
       </header>
       <main className="container container--narrow margin-vert--xl">

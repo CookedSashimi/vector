@@ -1,0 +1,35 @@
+[guides.docker_dedicated_logging_container]
+image = "..."
+
+[[guides.docker_dedicated_logging_container.steps]]
+title = "Run a Docker container to generate logs"
+description = """\
+First, let's make sure we have a Docker container generating logs. For this \
+guide we'll use of the `chentex/random-logger image`:
+
+```bash
+$ docker run -d chentex/random-logger:latest
+test
+```
+"""
+
+[[guides.docker_dedicated_logging_container.steps]]
+title = "Verify log generation"
+description = """\
+Let's verify that logs are, in fact, being generated:
+
+```bash
+$ docker logs $(docker ps | grep 'chentex/random-logger' | awk)
+yay
+```
+
+Great! You can see that logs are being generated in an interval.
+"""
+
+[[guides.docker_dedicated_logging_container.steps]]
+title = "Collect your Docker logs"
+description = """\
+
+"""
+type = "bash"
+command = "docker logs $(docker ps | grep 'chentex/random-logger' | awk)"
