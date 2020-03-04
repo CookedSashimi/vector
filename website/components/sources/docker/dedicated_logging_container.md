@@ -1,7 +1,7 @@
 ---
-id: sources/docker
+id: sources/docker/dedicated_logging_container
 title: Collect Docker Logs & Send Them Anywhere
-description: Learn the various ways to collect Docker logs and the pros/cons of each.
+description: Learn how to properly collect Docker logs, enrich them, and send them anywhere.
 keywords: ["docker","aws s3"]
 ---
 
@@ -9,27 +9,8 @@ keywords: ["docker","aws s3"]
 >
 > — developers
 
-So you want to collect your Docker logs and send them somewhere? Sounds simple!
-Sadly, it is not. There are many different ways you can collect your Docker
-logs, and depending on your deployment strategy, some are better than others.
-
-Fear not! This guide will _quickly_ navigate you to the appropriate method,
-where you can find a simple step-by-step guide and be on your way.
-
-## Docker Logging Strategies
-
-<ol className="list--lg">
-  <li>
-    <div><strong><a href="">Dedicated Logging Container Strategy (recommended)</a></strong></div>
-    <p>fdsfsdfsdf</p>
-  </li>
-  <li><strong><a href="">Docker Logging Drive Strategy</a></strong> - fdsfsdfsdf</li>
-</ol>
-
-
-
-When you account for
- integrating with the Docker API, parsing,
+So test you want to collect your Docker logs and send them somewhere? Sounds simple!
+Sadly, it is not. When you account for integrating with the Docker API, parsing,
 enriching, buffering, batching, retrying, handling back-pressure, load shedding,
 and fanning-out you quickly realize this is not so easy. Fear not though! This
 guide will get you up and running in minutes, all without becoming a Docker

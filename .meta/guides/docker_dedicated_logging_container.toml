@@ -29,7 +29,24 @@ Great! You can see that logs are being generated in an interval.
 [[guides.docker_dedicated_logging_container.steps]]
 title = "Collect your Docker logs"
 description = """\
+Now let's collet the logs. Keep in mind, this tutorial is following the \
+"dedicated logging container" strategy.
 
+```bash
+$ docker run --name="vector" \
+--volume=/var/run/docker.sock:/var/run/docker.sock \
+timberio/vector \
+'docker | console'
+```
+
+Let's break this command down:
+
+<Alert icon={false} type="info">
+
+* `--volumn` passed the Docker socket to the Vector container for log access.
+* `timberio/vector` is the official Vector Docker image.
+* `docker | console` tells Vector to collect logs from Docker and print them
+  to `STDOUT`.
+
+</Alert>
 """
-type = "bash"
-command = "docker logs $(docker ps | grep 'chentex/random-logger' | awk)"
